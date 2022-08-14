@@ -1,0 +1,189 @@
+/*nav*/
+nav {
+  display: flex;
+  align-items: center;
+}
+nav div {
+  margin-left: 10px;
+  margin-right: 10px;
+  min-width: fit-content;
+}
+div.search {
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  border: 1px solid black;
+  border-radius: 30px;
+}
+input {
+  border: hidden;
+  outline: none;
+}
+
+nav button {
+  border: hidden;
+  background-color: white;
+}
+.lo {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  padding: 10px 22px;
+  text-align: center;
+}
+.si {
+  /*sign*/
+  background-color: black;
+  border: 1px solid black;
+  color: white;
+  padding: 10px 22px;
+  text-align: center;
+}
+.small {
+  display: none;
+}
+
+.hoverblue:hover {
+  cursor: pointer;
+  color: #5624d0;
+}
+
+@media screen and (max-width: 915px) {
+  .small {
+    display: block;
+  }
+
+  .big,
+  div.search {
+    display: none;
+  }
+
+  nav {
+    justify-content: space-between;
+  }
+}
+
+/*header*/
+@media (min-width: 915px) {
+  .card {
+    position: relative;
+  }
+
+  .card .card_info {
+    background-color: white;
+    padding: 10px;
+    padding-bottom: 0px;
+    width: 350px;
+    position: absolute;
+    top: 60px;
+    left: 12%;
+    box-shadow: 2px 2px 5px grey;
+  }
+}
+
+@media (max-width: 915px) {
+  .card {
+    padding: 10px;
+    box-shadow: 2px 2px 10px grey;
+  }
+  .card img {
+    height: 300px;
+  }
+  .card .card_info {
+    margin-left: 6%;
+  }
+}
+/*courses section*/
+section {
+  width: 95%;
+  margin-left: 2.5%;
+  overflow: auto;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  font-weight: bold;
+  margin-right: 12px;
+  color: #6a6f73;
+  min-width: fit-content;
+}
+
+li:hover {
+  color: black;
+  cursor: pointer;
+}
+.click {
+  color: black;
+}
+
+.card2 {
+  border: 1px solid gray;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+.explore {
+  padding: 10px;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  font-weight: bold;
+}
+
+.explore:hover {
+  cursor: pointer;
+  background-color: aliceblue;
+}
+
+.courses {
+  width: fit-content;
+  margin-top: 15px;
+  display: flex;
+  margin-right: 0px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.photo {
+  width: 240px;
+  height: 135px;
+}
+
+.myCourse {
+  width: 240px;
+  margin-bottom: 15px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.hd {
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.author {
+  font-size: 12px;
+  color: gray;
+  margin: 5px 0px;
+}
+.rate {
+  font-size: 13px;
+  color: goldenrod;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+section i {
+  color: goldenrod;
+}
+
+.price {
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
