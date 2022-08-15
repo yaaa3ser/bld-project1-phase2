@@ -1,6 +1,9 @@
 let coursesDiv = document.querySelector(".courses");
 let myCourses = [];
 
+let expand = document.querySelector(".expand");
+let take = document.querySelector(".take");
+
 let python = document.querySelector(".py");
 let excel = document.querySelector(".ex");
 let web = document.querySelector(".web");
@@ -14,6 +17,10 @@ python.addEventListener("click", () => {
     all[i].style.color = "gray";
   }
   python.style.color = "black";
+  expand.innerHTML="";
+  take.innerHtml="";
+  expand.innerHTML=myCourses[0].sectionTitle;
+  take.innerHTML = myCourses[0].courseDesc;
   coursesDiv.innerHTML = "";
   for (let j = 0; j < myCourses[0]["courses"].length; j++) {
     makeCourses(myCourses[0]["courses"][j]);
@@ -24,6 +31,8 @@ excel.addEventListener("click", () => {
     all[i].style.color = "gray";
   }
   excel.style.color = "black";
+  expand.innerHTML=myCourses[1].sectionTitle;
+  take.innerHTML = myCourses[1].courseDesc;
   coursesDiv.innerHTML = "";
   for (let j = 0; j < myCourses[1]["courses"].length; j++) {
     makeCourses(myCourses[1]["courses"][j]);
@@ -34,9 +43,23 @@ web.addEventListener("click", () => {
     all[i].style.color = "gray";
   }
   web.style.color = "black";
+  expand.innerHTML=myCourses[2].sectionTitle;
+  take.innerHTML = myCourses[2].courseDesc;
   coursesDiv.innerHTML = "";
   for (let j = 0; j < myCourses[2]["courses"].length; j++) {
     makeCourses(myCourses[2]["courses"][j]);
+  }
+});
+java.addEventListener("click", () => {
+  for (let i = 0; i < 6; i++) {
+    all[i].style.color = "gray";
+  }
+  java.style.color = "black";
+  expand.innerHTML=myCourses[3].sectionTitle;
+  take.innerHTML = myCourses[3].courseDesc;
+  coursesDiv.innerHTML = "";
+  for (let j = 0; j < myCourses[3]["courses"].length; j++) {
+    makeCourses(myCourses[3]["courses"][j]);
   }
 });
 data.addEventListener("click", () => {
@@ -44,6 +67,8 @@ data.addEventListener("click", () => {
     all[i].style.color = "gray";
   }
   data.style.color = "black";
+  expand.innerHTML=myCourses[4].sectionTitle;
+  take.innerHTML = myCourses[4].courseDesc;
   coursesDiv.innerHTML = "";
   for (let j = 0; j < myCourses[4]["courses"].length; j++) {
     makeCourses(myCourses[4]["courses"][j]);
@@ -54,21 +79,14 @@ aws.addEventListener("click", () => {
     all[i].style.color = "gray";
   }
   aws.style.color = "black";
+  expand.innerHTML=myCourses[5].sectionTitle;
+  take.innerHTML = myCourses[5].courseDesc;
   coursesDiv.innerHTML = "";
   for (let j = 0; j < myCourses[5]["courses"].length; j++) {
     makeCourses(myCourses[5]["courses"][j]);
   }
 });
-java.addEventListener("click", () => {
-  for (let i = 0; i < 6; i++) {
-    all[i].style.color = "gray";
-  }
-  java.style.color = "black";
-  coursesDiv.innerHTML = "";
-  for (let j = 0; j < myCourses[3]["courses"].length; j++) {
-    makeCourses(myCourses[3]["courses"][j]);
-  }
-});
+
 
 let searchText = document.querySelector("#srch");
 
