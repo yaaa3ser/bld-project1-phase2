@@ -17,9 +17,9 @@ python.addEventListener("click", () => {
     all[i].style.color = "gray";
   }
   python.style.color = "black";
-  expand.innerHTML="";
-  take.innerHtml="";
-  expand.innerHTML=myCourses[0].sectionTitle;
+  expand.innerHTML = "";
+  take.innerHtml = "";
+  expand.innerHTML = myCourses[0].sectionTitle;
   take.innerHTML = myCourses[0].courseDesc;
   coursesDiv.innerHTML = "";
   for (let j = 0; j < myCourses[0]["courses"].length; j++) {
@@ -31,7 +31,7 @@ excel.addEventListener("click", () => {
     all[i].style.color = "gray";
   }
   excel.style.color = "black";
-  expand.innerHTML=myCourses[1].sectionTitle;
+  expand.innerHTML = myCourses[1].sectionTitle;
   take.innerHTML = myCourses[1].courseDesc;
   coursesDiv.innerHTML = "";
   for (let j = 0; j < myCourses[1]["courses"].length; j++) {
@@ -43,7 +43,7 @@ web.addEventListener("click", () => {
     all[i].style.color = "gray";
   }
   web.style.color = "black";
-  expand.innerHTML=myCourses[2].sectionTitle;
+  expand.innerHTML = myCourses[2].sectionTitle;
   take.innerHTML = myCourses[2].courseDesc;
   coursesDiv.innerHTML = "";
   for (let j = 0; j < myCourses[2]["courses"].length; j++) {
@@ -55,7 +55,7 @@ java.addEventListener("click", () => {
     all[i].style.color = "gray";
   }
   java.style.color = "black";
-  expand.innerHTML=myCourses[3].sectionTitle;
+  expand.innerHTML = myCourses[3].sectionTitle;
   take.innerHTML = myCourses[3].courseDesc;
   coursesDiv.innerHTML = "";
   for (let j = 0; j < myCourses[3]["courses"].length; j++) {
@@ -67,7 +67,7 @@ data.addEventListener("click", () => {
     all[i].style.color = "gray";
   }
   data.style.color = "black";
-  expand.innerHTML=myCourses[4].sectionTitle;
+  expand.innerHTML = myCourses[4].sectionTitle;
   take.innerHTML = myCourses[4].courseDesc;
   coursesDiv.innerHTML = "";
   for (let j = 0; j < myCourses[4]["courses"].length; j++) {
@@ -79,14 +79,13 @@ aws.addEventListener("click", () => {
     all[i].style.color = "gray";
   }
   aws.style.color = "black";
-  expand.innerHTML=myCourses[5].sectionTitle;
+  expand.innerHTML = myCourses[5].sectionTitle;
   take.innerHTML = myCourses[5].courseDesc;
   coursesDiv.innerHTML = "";
   for (let j = 0; j < myCourses[5]["courses"].length; j++) {
     makeCourses(myCourses[5]["courses"][j]);
   }
 });
-
 
 let searchText = document.querySelector("#srch");
 
@@ -115,7 +114,7 @@ function filter(searchText) {
   return filtered;
 }
 
-fetch("courses2.json")
+fetch("https://mocki.io/v1/d9283076-4bc9-4cd9-8e02-60e6f3a59f1e")
   .then((response) => {
     return response.json();
   })
